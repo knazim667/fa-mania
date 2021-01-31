@@ -1,14 +1,20 @@
 .logo {
   display: flex;
   font-family: "Anton", sans-serif;
+  line-height: 37px;
   .logo-image {
     width: 22px;
     height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .dash {
     margin: 0 5px 0 0;
+    line-height: 37px;
   }
   .mania {
     font-size: 20px;
+    line-height: 37px;
+    margin-bottom: 0;
   }
 }

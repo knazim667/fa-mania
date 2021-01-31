@@ -1,24 +1,35 @@
 @import "../../../../App.scss";
 
 .fa-primary {
-  padding: 6.5px 15px;
-  border-radius: 1px;
+  padding: 6.5px 19px;
+  border-radius: 3px;
   background-color: $primary;
   color: $white;
   font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  height: 37px;
 
   &:hover {
     background-color: $black;
+    color: $white;
   }
 }
 
 .fa-black {
-  padding: 6.5px 15px;
-  border-radius: 1px;
+  padding: 6.5px 19px;
+  border-radius: 3px;
   background-color: $black;
   color: $white;
   font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  height: 37px;
+
   &:hover {
     background-color: $primary;
+    color: $white;
   }
 }

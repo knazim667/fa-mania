@@ -7,7 +7,7 @@ import { NAV_ITEMS } from "../../utils/data";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-xxl">
+      <div className="container">
         <button className="navbar-toggler" type="button">
           <span className="navbar-toggler-icon"></span>
         </button>
