@@ -1,5 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
+import Icon from "react-icons-kit";
+import { shoppingCart } from "react-icons-kit/fa/shoppingCart";
 import { NAV_ITEMS } from "../../utils/data";
 
 const Navbar = () => {
@@ -19,6 +21,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <div className="ml-auto">
+            <Icon className="shopping-cart" icon={shoppingCart} size={20} />
+          </div>
         </div>
       </div>
     </nav>
