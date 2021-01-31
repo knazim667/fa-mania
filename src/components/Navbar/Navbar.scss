@@ -1,0 +1,21 @@
+@import "../../App.scss";
+.navbar-expand-lg {
+  justify-content: center;
+  &.bg-dark {
+    background-color: $black !important;
+  }
+  .container-xxl {
+    width: 100%;
+    max-width: 1320px;
+    .nav-link {
+      text-transform: capitalize;
+      font-family: "Roboto";
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.36;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      color: $white;
+    }
+  }
+}
