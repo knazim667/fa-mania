@@ -1,0 +1,30 @@
+@import "../../App.scss";
+
+.banner-container {
+  padding: 0;
+  position: relative;
+
+  .overlay-text {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 84px;
+    line-height: 124px;
+    color: $white;
+  }
+  h3 {
+    font-family: "Anton", sans-serif;
+    font-size: 26px;
+    line-height: 39px;
+    color: $white;
+    margin-bottom: 15px;
+  }
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+}

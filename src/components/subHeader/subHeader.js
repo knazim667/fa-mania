@@ -12,7 +12,7 @@ const SubHeader = () => {
         <Logo />
       </div>
       <div className="search-box">
-        <Input iconPosition={"right"} icon={search} type={"search"} />
+        <Input icon={search} type={"search"} />
       </div>
       <div className="button-box">
         <Button classes="fa-primary" title="Login" />

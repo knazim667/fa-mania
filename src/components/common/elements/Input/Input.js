@@ -1,4 +1,5 @@
 import React from "react";
+import "./input.scss";
 import Button from "../Button/Button";
 
 const Input = ({
@@ -9,12 +10,14 @@ const Input = ({
   iconPosition,
   icon,
 }) => {
-  let buttonIcon = <Button classes="btn-outline-secondary" icon={icon} />;
+  let buttonIcon = icon && (
+    <Button type="submit" classes="input-icon-right" icon={icon} />
+  );
 
   const position = iconPosition || "right";
 
   return (
-    <div className="input-group mb-3">
+    <div className="input-group">
       {position === "left" && buttonIcon}
       <input
         type={type}
@@ -22,7 +25,7 @@ const Input = ({
         placeholder={placeholder}
         value={value}
         icon={icon}
-        iconPosition={position}
+        icon-position={position}
         onChange={onChange}
       />
       {position === "right" && buttonIcon}
