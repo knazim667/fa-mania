@@ -1,7 +1,7 @@
-.login-container {
+.register-container {
   padding: 90px 0;
   justify-content: center;
-  .login-area {
+  .register-area {
     padding: 0;
     text-align: center;
     background-color: #f4f5f8;
@@ -21,6 +21,7 @@
         line-height: 29px;
         color: #343232;
         margin-bottom: 25px;
+        text-transform: capitalize;
       }
       h3 {
         font-family: "Roboto", sans-serif;
@@ -29,14 +30,16 @@
         font-weight: 400;
         color: #343232;
         margin-bottom: 17px;
+        text-transform: capitalize;
       }
       p {
         font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        line-height: 26px;
+        font-size: 18px;
+        line-height: 24px;
         font-weight: 300;
-        color: #727272;
-        margin-bottom: 35px;
+        color: #343232;
+        margin-top: 45px;
+        margin-bottom: 25px;
       }
       .input {
         width: 90%;

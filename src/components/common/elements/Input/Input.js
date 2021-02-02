@@ -8,11 +8,18 @@ const Input = ({
   value,
   onChange,
   iconPosition,
+  classes,
   icon,
 }) => {
   let buttonIcon = icon && (
     <Button type="submit" classes="input-icon-right" icon={icon} />
   );
+
+  let addAllClasses = [];
+
+  if (classes) {
+    addAllClasses.push(classes);
+  }
 
   const position = iconPosition || "right";
 
@@ -21,7 +28,7 @@ const Input = ({
       {position === "left" && buttonIcon}
       <input
         type={type}
-        className="form-control"
+        className={`form-control ${addAllClasses.join(" ")}`}
         placeholder={placeholder}
         value={value}
         icon={icon}

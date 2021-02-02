@@ -1,0 +1,18 @@
+.form-check {
+  margin-top: 10px;
+  .form-check-label {
+    font-size: 14px;
+    line-height: 19px;
+    color: #848798;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .form-check-input {
+    width: 21px;
+    height: 21px;
+    margin-top: 0.2rem;
+    &.left {
+      margin-left: 0.25rem;
+    }
+  }
+}
