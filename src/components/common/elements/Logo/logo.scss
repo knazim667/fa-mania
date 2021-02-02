@@ -1,3 +1,4 @@
+@import "../../../../App.scss";
 .logo {
   display: flex;
   font-family: "Anton", sans-serif;
@@ -11,10 +12,13 @@
   .dash {
     margin: 0 5px 0 0;
     line-height: 37px;
+    color: $black;
   }
   .mania {
     font-size: 20px;
     line-height: 37px;
     margin-bottom: 0;
+    font-family: "Anton", sans-serif;
+    color: $black;
   }
 }

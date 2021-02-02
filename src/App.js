@@ -1,14 +1,17 @@
+import { Route, Switch } from "react-router-dom";
 import "./App.scss";
-import Navbar from "./components/Navbar/Navbar";
-import SubHeader from "./components/subHeader/subHeader";
+import Header from "./components/Header/Header";
 import Homepage from "./pages/Homepage/Homepage";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <SubHeader />
-      <Homepage />
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/login" component={Login} />
+      </Switch>
     </div>
   );
 }
