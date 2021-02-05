@@ -10,6 +10,8 @@ const Input = ({
   iconPosition,
   classes,
   icon,
+  error,
+  ...props
 }) => {
   let buttonIcon = icon && (
     <Button type="submit" classes="input-icon-right" icon={icon} />
@@ -34,8 +36,10 @@ const Input = ({
         icon={icon}
         icon-position={position}
         onChange={onChange}
+        {...props}
       />
       {position === "right" && buttonIcon}
+      {error && <div className="alert alert-danger">{error}</div>}
     </div>
   );
 };

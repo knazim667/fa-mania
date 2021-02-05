@@ -1,7 +1,7 @@
 import React from "react";
 import "./checkbox.scss";
 
-const Checkbox = ({ labelText, name, labelPosition }) => {
+const Checkbox = ({ labelText, name, labelPosition, ...props }) => {
   let label = labelText && (
     <label className="form-check-label" htmlFor={name}>
       {labelText}
@@ -18,7 +18,8 @@ const Checkbox = ({ labelText, name, labelPosition }) => {
             : "form-check-input"
         }
         type="checkbox"
-        value=""
+        name={name}
+        {...props}
       />
       {position === "right" && label}
     </div>
