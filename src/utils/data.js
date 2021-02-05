@@ -170,7 +170,7 @@ export const PRODUCTS = {
         id: 8,
         name: "Blue Check Dress",
         price: 190,
-        imgUrl: cas1,
+        imgUrl: cas8,
         size: [32, 34, 36, 38],
         categories: ["dress", "semi dress"],
         tags: ["fashion dress", "casual dress", "dress", "blue"],

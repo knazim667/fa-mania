@@ -1,15 +1,25 @@
 import React from "react";
+import { connect } from "react-redux";
 import Banner from "../../components/Banner/Banner";
 import FashionProducts from "../../components/FashionProducts/FashionProducts";
-import { PRODUCTS } from "../../utils/data";
 
-const Homepage = () => {
+const Homepage = ({ products }) => {
+  const collections = Object.keys(products).map((key) => products[key]);
   return (
     <React.Fragment>
       <Banner />
-      <FashionProducts items={PRODUCTS} />
+      {collections.map((collection) => (
+        <FashionProducts
+          key={collection.id}
+          title={collection.title}
+          items={collection.items}
+        />
+      ))}
     </React.Fragment>
   );
 };
+const mapStateToProps = (state) => ({
+  products: state.products,
+});
 
-export default Homepage;
+export default connect(mapStateToProps)(Homepage);
