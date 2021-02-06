@@ -26,11 +26,11 @@ const Input = ({
   const position = iconPosition || "right";
 
   return (
-    <div className="input-group">
+    <div className={`input-group ${addAllClasses.join(" ")}`}>
       {position === "left" && buttonIcon}
       <input
         type={type}
-        className={`form-control ${addAllClasses.join(" ")}`}
+        className={"form-control"}
         placeholder={placeholder}
         value={value}
         icon={icon}

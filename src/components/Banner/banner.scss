@@ -28,21 +28,3 @@
     text-transform: uppercase;
   }
 }
-.slick-dots {
-  bottom: 5px;
-  li.slick-active {
-    button {
-      &::before {
-        opacity: 1;
-        color: $white;
-      }
-    }
-  }
-  li {
-    button {
-      &::before {
-        font-size: 10px;
-      }
-    }
-  }
-}

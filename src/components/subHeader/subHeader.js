@@ -15,7 +15,7 @@ const SubHeader = () => {
         </Link>
       </div>
       <div className="search-box">
-        <Input icon={search} type={"search"} />
+        <Input icon={search} type={"search"} classes="search-input" />
       </div>
       <div className="button-box">
         <Link to="/login">

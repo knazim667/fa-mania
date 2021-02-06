@@ -9,6 +9,14 @@ const SimpleSlider = ({ children }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    appendDots: (dots) => (
+      <div style={{ bottom: "0px" }}>
+        <ul style={{}}>{dots}</ul>
+      </div>
+    ),
+    customPaging: (i) => (
+      <div style={{ color: "white", fontWeight: 700 }}>{i + 1}</div>
+    ),
   };
   return <Slider {...settings}>{children}</Slider>;
 };

@@ -1,8 +1,14 @@
 import React from "react";
 import "./fashionProducts.scss";
 import Card from "../common/elements/Card/Card";
+import { connect } from "react-redux";
 
-const FashionProducts = ({ items, title }) => {
+const FashionProducts = ({ products }) => {
+  let title = "Fashion Products";
+
+  const filtered = products.filter(
+    (item) => item.tags.indexOf(title.toLowerCase()) >= 0
+  );
   return (
     <div className="container fashion-products">
       <div className="row">
@@ -11,12 +17,16 @@ const FashionProducts = ({ items, title }) => {
         </div>
       </div>
       <div className="row">
-        {items.map((item) => (
-          <Card key={item.id} item={item} />
+        {filtered.map((item, index) => (
+          <Card key={index} item={item} />
         ))}
       </div>
     </div>
   );
 };
 
-export default FashionProducts;
+const mapStateToProps = (state) => ({
+  products: state.products,
+});
+
+export default connect(mapStateToProps)(FashionProducts);
