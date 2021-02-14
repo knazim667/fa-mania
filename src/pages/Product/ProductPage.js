@@ -1,10 +1,12 @@
 import React from "react";
+import { connect } from "react-redux";
 import Banner from "../../components/Banner/Banner";
+import Card from "../../components/common/elements/Card/Card";
 
-const ProductPage = () => {
+const ProductPage = ({ products }) => {
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="container p-0">
         <div className="row">
           <div className="col-lg-12">
             <nav aria-label="breadcrumb">
@@ -20,18 +22,24 @@ const ProductPage = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-3">
             <ul className="list-group">
               <li className="list-group-item active" aria-current="true">
-                An active item
+                Ladies
               </li>
-              <li className="list-group-item">A second item</li>
-              <li className="list-group-item">A third item</li>
-              <li className="list-group-item">A fourth item</li>
+              <li className="list-group-item">Jeans</li>
+              <li className="list-group-item">Shirts</li>
+              <li className="list-group-item">Dress</li>
               <li className="list-group-item">And a fifth one</li>
             </ul>
+            <div>
+              <label for="customRange1" class="form-label">
+                Example range
+              </label>
+              <input type="range" class="form-range" id="customRange1"></input>
+            </div>
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-9 p-0">
             <div className="container">
               <div className="row">
                 <div className="col-lg-12">
@@ -107,6 +115,42 @@ const ProductPage = () => {
                   </div>
                 </div>
               </div>
+              <div className="row justify-content-around">
+                {products.map((item, index) => (
+                  <Card key={index} item={item} />
+                ))}
+              </div>
+            </div>
+            <div className="pagination">
+              <nav aria-label="Page navigation example ">
+                <ul className="pagination">
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      1
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      2
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      3
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -115,4 +159,8 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+const mapStateToProps = (state) => ({
+  products: state.products,
+});
+
+export default connect(mapStateToProps)(ProductPage);
