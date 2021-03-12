@@ -202,6 +202,7 @@ export const PRODUCTS = [
     size: ["sm", "md"],
     categories: "jackets",
     colors: ["brown"],
+    tags: ["jacket", "fashion jacket", "brown jacket"],
   },
   {
     id: 16,
@@ -211,6 +212,7 @@ export const PRODUCTS = [
     size: ["md", "lg"],
     categories: "jackets",
     colors: ["Blue"],
+    tags: ["jacket", "fashion jacket", "blue jacket"],
   },
   {
     id: 17,
@@ -220,6 +222,7 @@ export const PRODUCTS = [
     size: ["md"],
     categories: "jackets",
     colors: ["Red"],
+    tags: ["jacket", "fashion jacket", "red jacket"],
   },
   {
     id: 18,
@@ -229,6 +232,7 @@ export const PRODUCTS = [
     size: ["lg", "xlg"],
     categories: "jackets",
     colors: ["Black"],
+    tags: ["jacket", "fashion jacket", "black jacket"],
   },
   {
     id: 19,
@@ -238,6 +242,7 @@ export const PRODUCTS = [
     size: ["lg", "xlg"],
     categories: "jackets",
     colors: ["Black", "Red"],
+    tags: ["jacket", "check jacket", "red jacket", "feature product"],
   },
   {
     id: 20,
@@ -247,6 +252,7 @@ export const PRODUCTS = [
     size: ["lg", "md"],
     categories: "jeans",
     colors: ["Blue"],
+    tags: ["jeans", "blue jeans", "new style"],
   },
   {
     id: 21,
@@ -256,6 +262,7 @@ export const PRODUCTS = [
     size: ["sm", "md"],
     categories: "jeans",
     colors: ["Blue"],
+    tags: ["jeans", "blue jeans", "new style", "feature product"],
   },
   {
     id: 22,
@@ -265,6 +272,7 @@ export const PRODUCTS = [
     size: ["sm", "md"],
     categories: "jeans",
     colors: ["Blue"],
+    tags: ["jeans", "blue jeans", "new style"],
   },
   {
     id: 23,
@@ -274,6 +282,7 @@ export const PRODUCTS = [
     size: ["sm", "md"],
     categories: "jeans",
     colors: ["Blue"],
+    tags: ["jeans", "blue jeans", "new style"],
   },
   {
     id: 24,
@@ -283,6 +292,7 @@ export const PRODUCTS = [
     size: ["sm", "md"],
     categories: "jeans",
     colors: ["Blue"],
+    tags: ["jeans", "blue jeans", "new style"],
   },
   {
     id: 25,
@@ -292,6 +302,7 @@ export const PRODUCTS = [
     size: ["lg", "md"],
     categories: "shirts",
     colors: ["Green"],
+    tags: ["shirts", "multi colors"],
   },
   {
     id: 26,
@@ -301,6 +312,7 @@ export const PRODUCTS = [
     size: ["lg", "md"],
     categories: "shirts",
     colors: ["Black"],
+    tags: ["shirts", "black dress shirt", "feature product"],
   },
   {
     id: 27,
@@ -319,6 +331,7 @@ export const PRODUCTS = [
     size: ["sm", "md"],
     categories: "shirts",
     colors: ["Blue"],
+    tags: ["shirts", "sexy shirt", "see through"],
   },
   {
     id: 29,
@@ -328,6 +341,7 @@ export const PRODUCTS = [
     size: ["lg", "md"],
     categories: "shirts",
     colors: ["Blue"],
+    tags: ["shirts", "blue shirt"],
   },
   {
     id: 31,
@@ -346,6 +360,7 @@ export const PRODUCTS = [
     size: ["sm", "md", "lg"],
     categories: "trousers",
     colors: ["Brown"],
+    tags: ["trouser", "brown trouser", "party wear", "feature product"],
   },
   {
     id: 32,
@@ -355,6 +370,7 @@ export const PRODUCTS = [
     size: ["sm", "md", "lg"],
     categories: "trousers",
     colors: ["Black"],
+    tags: ["trouser", "black trouser"],
   },
   {
     id: 33,
@@ -364,6 +380,7 @@ export const PRODUCTS = [
     size: ["sm", "md", "lg"],
     categories: "trousers",
     colors: ["Purple"],
+    tags: ["trouser", "purple trouser", "party wear"],
   },
   {
     id: 34,
@@ -373,5 +390,6 @@ export const PRODUCTS = [
     size: ["sm", "md", "lg"],
     categories: "trousers",
     colors: ["Pink"],
+    tags: ["trouser", "pink trouser", "party wear", "feature product"],
   },
 ];

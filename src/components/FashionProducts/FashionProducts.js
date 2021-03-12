@@ -11,12 +11,11 @@ const FashionProducts = ({ products }) => {
     return product.tags;
   });
   const tagFilter = filtered.filter((item) => item.tags.indexOf(title) > -1);
-  console.log(tagFilter);
   return (
     <div className="container fashion-products">
       <div className="row">
         <div className="col-lg-12 p-0">
-          <h2 className="mb-3">{title}:</h2>
+          <h2 className="mb-3">{title}</h2>
         </div>
       </div>
       <div className="row">
