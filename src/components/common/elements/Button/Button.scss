@@ -35,3 +35,20 @@
     color: $white;
   }
 }
+.fa-outline-white {
+  padding: 6.5px 19px;
+  border-radius: 3px;
+  color: $white;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  height: 37px;
+  text-transform: capitalize;
+  border: 2px solid $white;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}

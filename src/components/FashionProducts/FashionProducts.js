@@ -16,7 +16,7 @@ const FashionProducts = ({ products }) => {
     <div className="container fashion-products">
       <div className="row">
         <div className="col-lg-12 p-0">
-          <h2 className="mb-3">{title}</h2>
+          <h2 className="mb-3">{title}:</h2>
         </div>
       </div>
       <div className="row">

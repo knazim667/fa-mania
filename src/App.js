@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import "./App.scss";
+import PromoCard from "./components/common/PromoCard";
 import Header from "./components/Header/Header";
 import Homepage from "./pages/Homepage/Homepage";
 import Login from "./pages/Login/Login";

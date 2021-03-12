@@ -6,7 +6,7 @@ const Card = ({ item }) => {
     <div className={`card product-card`}>
       <div
         className="product-image"
-        style={{ backgroundColor: item.background }}
+        style={{ backgroundColor: item.background ? item.background : " " }}
       >
         <img src={item.imgUrl} alt={item.name} />
       </div>
