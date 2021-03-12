@@ -35,24 +35,16 @@ import trouser5 from "../assets/images/Trouser/trouser-5.jpg";
 
 export const NAV_ITEMS = [
   {
-    label: "collections",
-    path: "/collections",
-  },
-  {
     label: "home",
     path: "/",
   },
   {
-    label: "women",
-    path: "/women",
+    label: "about",
+    path: "/about",
   },
   {
-    label: "home & furniture",
-    path: "/home&furniture",
-  },
-  {
-    label: "sports",
-    path: "/sports",
+    label: "products",
+    path: "/products",
   },
 ];
 
@@ -92,14 +84,14 @@ export const PRODUCTS = [
 
   {
     id: 4,
-    name: "Fashion Jacket",
+    name: "Fashion jackets",
     price: 499,
     imgUrl: netSemi4,
     background: "#dfc6bb",
     size: ["md", "lg"],
-    categories: "Jacket",
+    categories: "jackets",
     colors: ["brown"],
-    tags: ["fashion products", "jacket", "winter collection"],
+    tags: ["fashion products", "jackets", "winter collection"],
   },
 
   {
@@ -204,47 +196,47 @@ export const PRODUCTS = [
   },
   {
     id: 15,
-    name: "Light Brown Jacket",
+    name: "Light Brown jackets",
     price: 400,
     imgUrl: jack1,
     size: ["sm", "md"],
-    categories: "jacket",
+    categories: "jackets",
     colors: ["brown"],
   },
   {
     id: 16,
-    name: "Blue Jacket",
+    name: "Blue jackets",
     price: 450,
     imgUrl: jack2,
     size: ["md", "lg"],
-    categories: "jacket",
+    categories: "jackets",
     colors: ["Blue"],
   },
   {
     id: 17,
-    name: "Red Jacket",
+    name: "Red jackets",
     price: 350,
     imgUrl: jack3,
     size: ["md"],
-    categories: "jacket",
+    categories: "jackets",
     colors: ["Red"],
   },
   {
     id: 18,
-    name: "Black Jacket",
+    name: "Black jackets",
     price: 450,
     imgUrl: jack4,
     size: ["lg", "xlg"],
-    categories: "jacket",
+    categories: "jackets",
     colors: ["Black"],
   },
   {
     id: 19,
-    name: "Red check Jacket",
+    name: "Red check jackets",
     price: 550,
     imgUrl: jack5,
     size: ["lg", "xlg"],
-    categories: "jacket",
+    categories: "jackets",
     colors: ["Black", "Red"],
   },
   {

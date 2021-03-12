@@ -1,36 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import Banner from "../../components/Banner/Banner";
+import Breadcrumb from "../../components/common/elements/Breadcrumb/Breadcrum";
 import Card from "../../components/common/elements/Card/Card";
+import { getUniqueValues } from "../../utils/helper";
 
 const ProductPage = ({ products }) => {
+  let categories = getUniqueValues(products, "categories");
+  const [category, setCategory] = useState(" ");
+
+  let filteredproduct =
+    category === "all"
+      ? products
+      : products.filter((item) => item.categories === category);
+  console.log(filteredproduct);
+
   return (
     <React.Fragment>
       <div className="container p-0">
         <div className="row">
           <div className="col-lg-12">
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <a href="#">Home</a>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  Library
-                </li>
-              </ol>
-            </nav>
+            <Breadcrumb title="products" />
           </div>
         </div>
         <div className="row">
           <div className="col-lg-3">
             <ul className="list-group">
-              <li className="list-group-item active" aria-current="true">
-                Ladies
-              </li>
-              <li className="list-group-item">Jeans</li>
-              <li className="list-group-item">Shirts</li>
-              <li className="list-group-item">Dress</li>
-              <li className="list-group-item">And a fifth one</li>
+              {categories.map((c, index) => (
+                <li
+                  key={index}
+                  className={`${
+                    category === c.toLowerCase()
+                      ? "list-group-item active"
+                      : "list-group-item"
+                  }`}
+                  onClick={() => setCategory(c)}
+                >
+                  {c}
+                </li>
+              ))}
             </ul>
             <div>
               <label for="customRange1" class="form-label">
@@ -116,7 +124,7 @@ const ProductPage = ({ products }) => {
                 </div>
               </div>
               <div className="row justify-content-around">
-                {products.map((item, index) => (
+                {filteredproduct.map((item, index) => (
                   <Card key={index} item={item} />
                 ))}
               </div>

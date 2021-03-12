@@ -4,10 +4,10 @@ import SubHeader from "../subHeader/subHeader";
 
 const Header = () => {
   return (
-    <>
+    <React.Fragment>
       <Navbar />
       <SubHeader />
-    </>
+    </React.Fragment>
   );
 };
 
