@@ -4,10 +4,11 @@ import Banner from "../../components/Banner/Banner";
 import Breadcrumb from "../../components/common/elements/Breadcrumb/Breadcrum";
 import Card from "../../components/common/elements/Card/Card";
 import { getUniqueValues } from "../../utils/helper";
+import "./productPage.scss";
 
 const ProductPage = ({ products }) => {
   let categories = getUniqueValues(products, "categories");
-  const [category, setCategory] = useState(" ");
+  const [category, setCategory] = useState("all");
 
   let filteredproduct =
     category === "all"
@@ -40,11 +41,16 @@ const ProductPage = ({ products }) => {
                 </li>
               ))}
             </ul>
-            <div>
-              <label for="customRange1" class="form-label">
-                Example range
+            <div className="range-filter">
+              <label for="customRange1" className="form-label">
+                Price
               </label>
-              <input type="range" class="form-range" id="customRange1"></input>
+              <input
+                type="range"
+                className="form-range"
+                min="50"
+                max="500"
+              ></input>
             </div>
           </div>
           <div className="col-lg-9 p-0">

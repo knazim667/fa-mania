@@ -4,7 +4,7 @@ import FashionProducts from "../../components/FashionProducts/FashionProducts";
 import FeatureProduct from "../../components/FeatureProduct";
 import PromotionalProduct from "../../components/PromotionalProduct/index";
 
-const Homepage = ({ products }) => {
+const Homepage = () => {
   return (
     <React.Fragment>
       <Banner />
